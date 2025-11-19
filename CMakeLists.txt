@@ -9,8 +9,8 @@ project( ufs_fire_behavior VERSION 0.0.1 LANGUAGES Fortran CXX )
 include( ecbuild_system )
 
 # 3. Find Dependencies the "JEDI way"
-ecbuild_find_package( NAME NetCDF REQUIRED )
-ecbuild_find_package( NAME MPI REQUIRED )
+ecbuild_find_package( NAME NetCDF REQUIRED COMPONENTS Fortran )
+ecbuild_find_package( NAME MPI REQUIRED COMPONENTS Fortran )
 
 # ------------------------------------------------------------------------------
 # Define Source Files (Adapted from your original list)
